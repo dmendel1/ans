@@ -1,0 +1,6 @@
+- hosts: localhost
+  vars:
+    artifactory_host: 172.31.0.42
+  tasks:
+    - name: create settings
+      template: src=~/ans/settings.xml dest=~/ans/new.temp.xml
